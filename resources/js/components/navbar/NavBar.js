@@ -13,14 +13,25 @@ import White_Student_Logo from "../../../images/Kemahasiswaan-putih.png";
 import White_SignOut_Logo from "../../../images/Keluar-putih.png";
 
 const NavBar = () => {
+    const UB_Logo_Style = {
+        width: "50%",
+        marginTop: "10%",
+        marginBottom: "15%",
+    };
+
+    const english_text = {
+        fontStyle: "italic",
+        fontSize: "75%",
+    };
+
     return (
         <section id="sidebar">
-            <img src={UB_Logo} />
+            <img src={UB_Logo} style={UB_Logo_Style} />
             <Link className="sidebar-menu current" to="/akademik'">
                 <img src={White_Academic_Logo} className="sidebar-menu-icon" />
                 <div className="sidebar-menu-text">
                     <p>Akademik</p>
-                    <p>Academic</p>
+                    <p style={english_text}>Academic</p>
                 </div>
             </Link>
             <Link className="sidebar-menu" to="/registrasi">
@@ -30,14 +41,14 @@ const NavBar = () => {
                 />
                 <div className="sidebar-menu-text">
                     <p>Registrasi</p>
-                    <p>Registration</p>
+                    <p style={english_text}>Registration</p>
                 </div>
             </Link>
             <Link className="sidebar-menu" to="/biodata">
                 <img src={White_Bio_Logo} className="sidebar-menu-icon" />
                 <div className="sidebar-menu-text">
                     <p>Biodata</p>
-                    <p>Biodata</p>
+                    <p style={english_text}>Biodata</p>
                 </div>
             </Link>
             <Link className="sidebar-menu" to="/aplikasi">
@@ -47,21 +58,21 @@ const NavBar = () => {
                 />
                 <div className="sidebar-menu-text">
                     <p>Aplikasi</p>
-                    <p>Application</p>
+                    <p style={english_text}>Application</p>
                 </div>
             </Link>
             <Link className="sidebar-menu" to="/kemahasiswaan">
                 <img src={White_Student_Logo} className="sidebar-menu-icon" />
                 <div className="sidebar-menu-text">
                     <p>Kemahasiswaan</p>
-                    <p>Student Affairs</p>
+                    <p style={english_text}>Student Affairs</p>
                 </div>
             </Link>
             <Link className="sidebar-menu" to="/login">
                 <img src={White_SignOut_Logo} className="sidebar-menu-icon" />
                 <div className="sidebar-menu-text">
                     <p>Keluar</p>
-                    <p>Log Out</p>
+                    <p style={english_text}>Log Out</p>
                 </div>
             </Link>
         </section>

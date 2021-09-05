@@ -1903,13 +1903,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _navbar_NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navbar/NavBar */ "./resources/js/components/navbar/NavBar.js");
-/* harmony import */ var _Test_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Test.js */ "./resources/js/components/Test.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -1917,30 +1914,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Index() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     className: "container",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       className: "row justify-content-center",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
         className: "col-md-8",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
           className: "card",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-            children: "hello"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, {
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Switch, {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Switch, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
                 path: "/",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_navbar_NavBar__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Test_js__WEBPACK_IMPORTED_MODULE_3__.default, {})]
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_navbar_NavBar__WEBPACK_IMPORTED_MODULE_2__.default, {})
               })
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-            className: "card-header",
-            children: "Index Component"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-            className: "card-body",
-            children: "I'm an Index component!"
-          })]
+          })
         })
       })
     })
@@ -1950,36 +1939,8 @@ function Index() {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
 
 if (document.getElementById("root")) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Index, {}), document.getElementById("root"));
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Index, {}), document.getElementById("root"));
 }
-
-/***/ }),
-
-/***/ "./resources/js/components/Test.js":
-/*!*****************************************!*\
-  !*** ./resources/js/components/Test.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-var Test = function Test() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-      children: "test"
-    })
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Test);
 
 /***/ }),
 
@@ -2019,10 +1980,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var NavBar = function NavBar() {
+  var UB_Logo_Style = {
+    width: "50%",
+    marginTop: "10%",
+    marginBottom: "15%"
+  };
+  var english_text = {
+    fontStyle: "italic",
+    fontSize: "75%"
+  };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("section", {
     id: "sidebar",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
-      src: _images_Logo_Universitas_Brawijaya_png__WEBPACK_IMPORTED_MODULE_2__.default
+      src: _images_Logo_Universitas_Brawijaya_png__WEBPACK_IMPORTED_MODULE_2__.default,
+      style: UB_Logo_Style
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
       className: "sidebar-menu current",
       to: "/akademik'",
@@ -2034,6 +2005,7 @@ var NavBar = function NavBar() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
           children: "Akademik"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+          style: english_text,
           children: "Academic"
         })]
       })]
@@ -2048,6 +2020,7 @@ var NavBar = function NavBar() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
           children: "Registrasi"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+          style: english_text,
           children: "Registration"
         })]
       })]
@@ -2062,6 +2035,7 @@ var NavBar = function NavBar() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
           children: "Biodata"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+          style: english_text,
           children: "Biodata"
         })]
       })]
@@ -2076,6 +2050,7 @@ var NavBar = function NavBar() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
           children: "Aplikasi"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+          style: english_text,
           children: "Application"
         })]
       })]
@@ -2090,6 +2065,7 @@ var NavBar = function NavBar() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
           children: "Kemahasiswaan"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+          style: english_text,
           children: "Student Affairs"
         })]
       })]
@@ -2104,6 +2080,7 @@ var NavBar = function NavBar() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
           children: "Keluar"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+          style: english_text,
           children: "Log Out"
         })]
       })]
@@ -6573,7 +6550,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "#sidebar {\r\n    padding: 1%;\r\n    background-color: #003250;\r\n    width: 10%;\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    position: fixed;\r\n    padding: 0;\r\n    margin: 0;\r\n    align-items: center;\r\n}\r\n.sidebar-menu {\r\n    color: #ffffff;\r\n    width: 100%;\r\n    height: 7%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    font-size: 16px;\r\n    font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\r\n    margin-top: 5.5%;\r\n    /* justify-content: left; */\r\n    align-items: center;\r\n    text-decoration: none;\r\n}\r\n.sidebar-menu-icon {\r\n    width: 20%;\r\n    height: -webkit-fit-content;\r\n    height: -moz-fit-content;\r\n    height: fit-content;\r\n    margin-left: 3%;\r\n}\r\n.sidebar-menu-text {\r\n    display: flex;\r\n    flex-direction: column;\r\n    margin-left: 3%;\r\n}\r\n.current {\r\n    background-color: #0784b5;\r\n}\r\n.sidebar-menu:hover {\r\n    background-color: #0784b5;\r\n    cursor: pointer;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\np {\r\n    margin: 0;\r\n}\r\n#sidebar {\r\n    padding: 1%;\r\n    background-color: #003250;\r\n    width: 10vw;\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    position: fixed;\r\n    padding: 0;\r\n    margin: 0;\r\n    align-items: center;\r\n}\r\n.sidebar-menu {\r\n    color: #ffffff;\r\n    width: 100%;\r\n    height: 7%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    font-size: 16px;\r\n    font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\r\n    margin-top: 5.5%;\r\n    /* justify-content: left; */\r\n    align-items: center;\r\n    text-decoration: none;\r\n}\r\n.sidebar-menu-icon {\r\n    width: 20%;\r\n    height: -webkit-fit-content;\r\n    height: -moz-fit-content;\r\n    height: fit-content;\r\n    margin-left: 3%;\r\n}\r\n.sidebar-menu-text {\r\n    display: flex;\r\n    flex-direction: column;\r\n    margin-left: 3%;\r\n}\r\n.current {\r\n    background-color: #0784b5;\r\n}\r\n.sidebar-menu:hover {\r\n    background-color: #0784b5;\r\n    cursor: pointer;\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

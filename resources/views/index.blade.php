@@ -34,7 +34,6 @@
 </head>
 
 <body>
-    <p>index blade</p>
     <div id="root"></div>
 </body>
 
