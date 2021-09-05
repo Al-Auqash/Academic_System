@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "../../../css/NavBar.css";
 
@@ -21,20 +21,20 @@ const NavBar = () => {
 
     const english_text = {
         fontStyle: "italic",
-        fontSize: "75%",
+        fontSize: "0.78em",
     };
 
     return (
         <section id="sidebar">
-            <img src={UB_Logo} style={UB_Logo_Style} />
-            <Link className="sidebar-menu current" to="/akademik'">
+            <img src={UB_Logo} style={UB_Logo_Style}  />
+            <NavLink className="sidebar-menu" to="/akademik" activeClassName="activeLink">
                 <img src={White_Academic_Logo} className="sidebar-menu-icon" />
                 <div className="sidebar-menu-text">
                     <p>Akademik</p>
                     <p style={english_text}>Academic</p>
                 </div>
-            </Link>
-            <Link className="sidebar-menu" to="/registrasi">
+            </NavLink>
+            <NavLink className="sidebar-menu" to="/registrasi" activeClassName="activeLink">
                 <img
                     src={White_Registration_Logo}
                     className="sidebar-menu-icon"
@@ -43,15 +43,15 @@ const NavBar = () => {
                     <p>Registrasi</p>
                     <p style={english_text}>Registration</p>
                 </div>
-            </Link>
-            <Link className="sidebar-menu" to="/biodata">
+            </NavLink>
+            <NavLink className="sidebar-menu" to="/biodata" activeClassName="activeLink">
                 <img src={White_Bio_Logo} className="sidebar-menu-icon" />
                 <div className="sidebar-menu-text">
                     <p>Biodata</p>
                     <p style={english_text}>Biodata</p>
                 </div>
-            </Link>
-            <Link className="sidebar-menu" to="/aplikasi">
+            </NavLink>
+            <NavLink className="sidebar-menu" to="/aplikasi" activeClassName="activeLink">
                 <img
                     src={White_Application_Logo}
                     className="sidebar-menu-icon"
@@ -60,21 +60,21 @@ const NavBar = () => {
                     <p>Aplikasi</p>
                     <p style={english_text}>Application</p>
                 </div>
-            </Link>
-            <Link className="sidebar-menu" to="/kemahasiswaan">
+            </NavLink>
+            <NavLink className="sidebar-menu" to="/kemahasiswaan" activeClassName="activeLink">
                 <img src={White_Student_Logo} className="sidebar-menu-icon" />
                 <div className="sidebar-menu-text">
                     <p>Kemahasiswaan</p>
                     <p style={english_text}>Student Affairs</p>
                 </div>
-            </Link>
-            <Link className="sidebar-menu" to="/login">
+            </NavLink>
+            <NavLink className="sidebar-menu" to="/login" activeClassName="activeLink">
                 <img src={White_SignOut_Logo} className="sidebar-menu-icon" />
                 <div className="sidebar-menu-text">
                     <p>Keluar</p>
                     <p style={english_text}>Log Out</p>
                 </div>
-            </Link>
+            </NavLink>
         </section>
     );
 };

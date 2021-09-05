@@ -8,7 +8,7 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" /> -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
 
-    <title>LLL Tournament</title>
+    <title>Academic System</title>
     <style>
         body {
             margin: 0;

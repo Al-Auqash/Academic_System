@@ -12,7 +12,7 @@ function Index() {
                     <div className="card">
                         <Router>
                             <Switch>
-                                <Route path="/">
+                                <Route path="/akademik">
                                     <NavBar />
                                 </Route>
                             </Switch>

@@ -1925,7 +1925,7 @@ function Index() {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, {
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Switch, {
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
-                path: "/",
+                path: "/akademik",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_navbar_NavBar__WEBPACK_IMPORTED_MODULE_2__.default, {})
               })
             })
@@ -1987,16 +1987,17 @@ var NavBar = function NavBar() {
   };
   var english_text = {
     fontStyle: "italic",
-    fontSize: "75%"
+    fontSize: "0.78em"
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("section", {
     id: "sidebar",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
       src: _images_Logo_Universitas_Brawijaya_png__WEBPACK_IMPORTED_MODULE_2__.default,
       style: UB_Logo_Style
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
-      className: "sidebar-menu current",
-      to: "/akademik'",
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.NavLink, {
+      className: "sidebar-menu",
+      to: "/akademik",
+      activeClassName: "activeLink",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
         src: _images_Akademik_putih_png__WEBPACK_IMPORTED_MODULE_3__.default,
         className: "sidebar-menu-icon"
@@ -2009,9 +2010,10 @@ var NavBar = function NavBar() {
           children: "Academic"
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.NavLink, {
       className: "sidebar-menu",
       to: "/registrasi",
+      activeClassName: "activeLink",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
         src: _images_Registrasi_putih_png__WEBPACK_IMPORTED_MODULE_4__.default,
         className: "sidebar-menu-icon"
@@ -2024,9 +2026,10 @@ var NavBar = function NavBar() {
           children: "Registration"
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.NavLink, {
       className: "sidebar-menu",
       to: "/biodata",
+      activeClassName: "activeLink",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
         src: _images_Biodata_putih_png__WEBPACK_IMPORTED_MODULE_5__.default,
         className: "sidebar-menu-icon"
@@ -2039,9 +2042,10 @@ var NavBar = function NavBar() {
           children: "Biodata"
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.NavLink, {
       className: "sidebar-menu",
       to: "/aplikasi",
+      activeClassName: "activeLink",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
         src: _images_aplikasi_putih_png__WEBPACK_IMPORTED_MODULE_6__.default,
         className: "sidebar-menu-icon"
@@ -2054,9 +2058,10 @@ var NavBar = function NavBar() {
           children: "Application"
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.NavLink, {
       className: "sidebar-menu",
       to: "/kemahasiswaan",
+      activeClassName: "activeLink",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
         src: _images_Kemahasiswaan_putih_png__WEBPACK_IMPORTED_MODULE_7__.default,
         className: "sidebar-menu-icon"
@@ -2069,9 +2074,10 @@ var NavBar = function NavBar() {
           children: "Student Affairs"
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.NavLink, {
       className: "sidebar-menu",
       to: "/login",
+      activeClassName: "activeLink",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
         src: _images_Keluar_putih_png__WEBPACK_IMPORTED_MODULE_8__.default,
         className: "sidebar-menu-icon"
@@ -6550,7 +6556,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\np {\r\n    margin: 0;\r\n}\r\n#sidebar {\r\n    padding: 1%;\r\n    background-color: #003250;\r\n    width: 10vw;\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    position: fixed;\r\n    padding: 0;\r\n    margin: 0;\r\n    align-items: center;\r\n}\r\n.sidebar-menu {\r\n    color: #ffffff;\r\n    width: 100%;\r\n    height: 7%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    font-size: 16px;\r\n    font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\r\n    margin-top: 5.5%;\r\n    /* justify-content: left; */\r\n    align-items: center;\r\n    text-decoration: none;\r\n}\r\n.sidebar-menu-icon {\r\n    width: 20%;\r\n    height: -webkit-fit-content;\r\n    height: -moz-fit-content;\r\n    height: fit-content;\r\n    margin-left: 3%;\r\n}\r\n.sidebar-menu-text {\r\n    display: flex;\r\n    flex-direction: column;\r\n    margin-left: 3%;\r\n}\r\n.current {\r\n    background-color: #0784b5;\r\n}\r\n.sidebar-menu:hover {\r\n    background-color: #0784b5;\r\n    cursor: pointer;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\np {\r\n    margin: 0;\r\n}\r\n#sidebar {\r\n    padding: 1%;\r\n    background-color: #003250;\r\n    width: 10vw;\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    position: fixed;\r\n    padding: 0;\r\n    margin: 0;\r\n    align-items: center;\r\n}\r\n.sidebar-menu {\r\n    color: #ffffff;\r\n    width: 100%;\r\n    height: 7%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    font-size: 16px;\r\n    /* font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif; */\r\n    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    margin-top: 5.5%;\r\n    /* justify-content: left; */\r\n    align-items: center;\r\n    text-decoration: none;\r\n}\r\n.sidebar-menu-icon {\r\n    width: 20%;\r\n    height: -webkit-fit-content;\r\n    height: -moz-fit-content;\r\n    height: fit-content;\r\n    margin-left: 3%;\r\n}\r\n.sidebar-menu-text {\r\n    display: flex;\r\n    flex-direction: column;\r\n    margin-left: 3%;\r\n    font-size: 0.9em;\r\n    /* font-weight: bold; */\r\n}\r\n.activeLink {\r\n    background-color: #0784b5;\r\n}\r\n.sidebar-menu:hover {\r\n    background-color: #0784b5;\r\n    cursor: pointer;\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -18,10 +18,10 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
-Route::get('/', function () {
+Route::get('/akademik', function () {
     return view('index');
 });
 
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/akademik', [HomeController::class, 'index'])->name('akademik');
