@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const SubBar = () => {
     const subBar = {
-        width: "100%",
+        width: "50%",
     };
 
     const flexColumn = {
@@ -11,40 +11,45 @@ const SubBar = () => {
         flexDirection: "column",
     };
 
-    const SubBarItem = {
+    const subBarItem = {
         fontSize: "1rem",
+    };
+
+    const englishText = {
+        fontSize: "75%",
+        fontStyle: "italic",
     };
 
     return (
         <div style={subBar}>
             <div style={flexColumn}>
-                <NavLink to="#" style={SubBarItem}>
+                <NavLink to="#" style={subBarItem}>
                     <p>Presensi Online</p>
-                    <p>Online Presence</p>
+                    <p style={englishText}>Online Presence</p>
                 </NavLink>
-                <NavLink to="#" style={SubBarItem}>
+                <NavLink to="#" style={subBarItem}>
                     <p>Kartu Rencana Studi</p>
-                    <p>Course Selection Sheet</p>
+                    <p style={englishText}>Course Selection Sheet</p>
                 </NavLink>
-                <NavLink to="#" style={SubBarItem}>
+                <NavLink to="#" style={subBarItem}>
                     <p>Kartu Hasil Studi</p>
-                    <p>Course Grade</p>
+                    <p style={englishText}>Course Grade</p>
                 </NavLink>
-                <NavLink to="#" style={SubBarItem}>
+                <NavLink to="#" style={subBarItem}>
                     <p>Jadwal Kuliah</p>
-                    <p>Course Schedule</p>
+                    <p style={englishText}>Course Schedule</p>
                 </NavLink>
-                <NavLink to="#" style={SubBarItem}>
+                <NavLink to="#" style={subBarItem}>
                     <p>Jadwal Ujian</p>
-                    <p>Exam Schedule</p>
+                    <p style={englishText}>Exam Schedule</p>
                 </NavLink>
-                <NavLink to="#" style={SubBarItem}>
+                <NavLink to="#" style={subBarItem}>
                     <p>Absensi</p>
-                    <p>Attendance</p>
+                    <p style={englishText}>Attendance</p>
                 </NavLink>
-                <NavLink to="#" style={SubBarItem}>
+                <NavLink to="#" style={subBarItem}>
                     <p>Rekap Hasil Studi</p>
-                    <p>Summary of Course Grades</p>
+                    <p style={englishText}>Summary of Course Grades</p>
                 </NavLink>
             </div>
         </div>

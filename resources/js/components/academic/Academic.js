@@ -1,11 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Biodata from "./Biodata";
+import Content from "./Content";
+import News from "./News";
 import SubBar from "./SubBar";
 
 const Academic = () => {
     const academic = {
-        width: "70vw",
+        width: "90vw",
         marginLeft: "10vw",
         padding: "5%",
     };
@@ -15,8 +17,16 @@ const Academic = () => {
             <Router>
                 <Switch>
                     <Route path="/akademik">
-                        <Biodata />
-                        <SubBar />
+                        <div className="d-flex flex-column">
+                            <div className="d-flex flex-row">
+                                <Biodata />
+                                <News />
+                            </div>
+                            <div className="d-flex flex-row mt-5">
+                                <SubBar />
+                                <Content />
+                            </div>
+                        </div>
                     </Route>
                 </Switch>
             </Router>

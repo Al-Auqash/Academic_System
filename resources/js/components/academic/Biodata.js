@@ -1,42 +1,61 @@
 import React from "react";
 
+import UserEx from "./../../../images/user-ex.jpg";
+
 const Biodata = () => {
-    const biodata = {};
+    const biodata = {
+        margin: "0",
+        padding: "0",
+        width: "60%",
+    };
+
+    const tableBiodata = {
+        width: "80%",
+    };
+
+    const tableItem = {
+        padding: "0.5 rem",
+    };
+
+    const photoProfile = {
+        width: "20%",
+        objectFit: "cover",
+    };
     return (
         <section className="biodata d-flex flex-row" style={biodata}>
-            <img className="photoProfile" src="#"></img>
-            <table class="table table-borderless">
+            <img style={photoProfile} src={UserEx}></img>
+            <table className="table-borderless ml-2" style={tableBiodata}>
                 <tr>
-                    <td>NIM</td>
-                    <td>NIM</td>
+                    <td style={tableItem}>NIM</td>
+                    <td style={tableItem}>NIM</td>
                 </tr>
                 <tr>
-                    <td>Nama</td>
-                    <td>Nama</td>
+                    <td style={tableItem}>Nama</td>
+                    <td style={tableItem}>Nama</td>
                 </tr>
                 <tr>
-                    <td>Jenjang/Fakultas</td>
-                    <td>Jenjang/Fakultas</td>
+                    <td style={tableItem}>Jenjang/Fakultas</td>
+                    <td style={tableItem}>Jenjang/Fakultas</td>
                 </tr>
                 <tr>
-                    <td>Jurusan</td>
-                    <td>Jurusan</td>
+                    <td style={tableItem}>Jurusan</td>
+                    <td style={tableItem}>Jurusan</td>
                 </tr>
                 <tr>
-                    <td>Program Studi</td>
-                    <td>Program Studi</td>
+                    <td style={tableItem}>Program Studi</td>
+                    <td style={tableItem}>Program Studi</td>
                 </tr>
                 <tr>
-                    <td>Seleksi</td>
-                    <td>Seleksi</td>
+                    <td style={tableItem}>Seleksi</td>
+                    <td style={tableItem}>Seleksi</td>
                 </tr>
                 <tr>
-                    <td>Nomor Ujian</td>
-                    <td>Nomor Ujian</td>
+                    <td style={tableItem}>Nomor Ujian</td>
+                    <td style={tableItem}>Nomor Ujian</td>
                 </tr>
                 <tr>
-                    <td>Status</td>
-                    <td>Status</td>
+                    <td style={tableItem}>Status</td>
+                    <td style={tableItem}>Status</td>
                 </tr>
             </table>
         </section>
