@@ -2178,13 +2178,18 @@ __webpack_require__.r(__webpack_exports__);
 var News = function News() {
   var news = {
     width: "40%",
-    backgroundColor: "#003250"
+    backgroundColor: "#003250",
+    color: "#ffffff",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center"
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("section", {
     style: news,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-        children: "news"
+        children: "NEWS"
       })
     })
   });
