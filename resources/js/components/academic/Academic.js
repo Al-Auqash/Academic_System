@@ -13,16 +13,20 @@ const Academic = () => {
     // };
 
     return (
-        <div className="container">
+        <div className="container pt-4">
             <Router>
                 <Switch>
                     <Route path="/akademik">
-                        <div className="d-flex flex-column">
-                            <div className="d-flex flex-row">
-                                <Biodata />
-                                <News />
+                        <div className="col">
+                            <div className="row">
+                                <div className="col-9 p-0">
+                                    <Biodata />
+                                </div>
+                                <div className="col-3">
+                                    <News />
+                                </div>
                             </div>
-                            <div className="d-flex flex-row mt-5">
+                            <div className="row mt-5">
                                 <SubBar />
                                 <Content />
                             </div>

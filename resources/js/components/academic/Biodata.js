@@ -3,62 +3,69 @@ import React from "react";
 import UserEx from "./../../../images/user-ex.jpg";
 
 const Biodata = () => {
-    const biodata = {
-        margin: "0",
-        padding: "0",
-        width: "60%",
-    };
-
-    const tableBiodata = {
-        width: "80%",
-    };
-
-    const tableItem = {
-        padding: "0.5 rem",
-    };
-
     const photoProfile = {
-        width: "20%",
         objectFit: "cover",
     };
     return (
-        <section className="biodata d-flex flex-row" style={biodata}>
-            <img style={photoProfile} src={UserEx}></img>
-            <table className="table-borderless ml-2" style={tableBiodata}>
-                <tr>
-                    <td style={tableItem}>NIM</td>
-                    <td style={tableItem}>NIM</td>
-                </tr>
-                <tr>
-                    <td style={tableItem}>Nama</td>
-                    <td style={tableItem}>Nama</td>
-                </tr>
-                <tr>
-                    <td style={tableItem}>Jenjang/Fakultas</td>
-                    <td style={tableItem}>Jenjang/Fakultas</td>
-                </tr>
-                <tr>
-                    <td style={tableItem}>Jurusan</td>
-                    <td style={tableItem}>Jurusan</td>
-                </tr>
-                <tr>
-                    <td style={tableItem}>Program Studi</td>
-                    <td style={tableItem}>Program Studi</td>
-                </tr>
-                <tr>
-                    <td style={tableItem}>Seleksi</td>
-                    <td style={tableItem}>Seleksi</td>
-                </tr>
-                <tr>
-                    <td style={tableItem}>Nomor Ujian</td>
-                    <td style={tableItem}>Nomor Ujian</td>
-                </tr>
-                <tr>
-                    <td style={tableItem}>Status</td>
-                    <td style={tableItem}>Status</td>
-                </tr>
-            </table>
-        </section>
+        <div className="biodata row">
+            <img
+                className="col-3 rounded mx-auto d-block"
+                style={photoProfile}
+                src={UserEx}
+            ></img>
+            <div className="col-9">
+                <table className="table-borderless">
+                    <tr>
+                        <td width="20%">NIM</td>
+                        <th width="80%" className="pl-4">
+                            NIM
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="20%">Nama</td>
+                        <th width="80%" className="pl-4">
+                            Nama
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="20%">Jenjang/Fakultas</td>
+                        <th width="80%" className="pl-4">
+                            Jenjang/Fakultas
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="20%">Jurusan</td>
+                        <th width="80%" className="pl-4">
+                            Jurusan
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="20%">Program Studi</td>
+                        <th width="80%" className="pl-4">
+                            Program Studi
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="20%">Seleksi</td>
+                        <th width="80%" className="pl-4">
+                            Seleksi
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="20%">Nomor Ujian</td>
+                        <th width="80%" className="pl-4">
+                            Nomor Ujian
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="20%">Status</td>
+                        <th width="80%" className="pl-4">
+                            Status
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
     );
 };
 
