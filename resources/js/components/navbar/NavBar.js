@@ -11,12 +11,11 @@ import White_Bio_Logo from "../../../images/Biodata-putih.png";
 import White_Application_Logo from "../../../images/aplikasi-putih.png";
 import White_Student_Logo from "../../../images/Kemahasiswaan-putih.png";
 import White_SignOut_Logo from "../../../images/Keluar-putih.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {
     const UB_Logo_Style = {
         width: "50%",
-        marginTop: "10%",
-        marginBottom: "15%",
     };
 
     const english_text = {
@@ -25,54 +24,62 @@ const NavBar = () => {
     };
 
     return (
-        <section id="sidebar">
-            <img src={UB_Logo} style={UB_Logo_Style}  />
-            <NavLink className="sidebar-menu" to="/akademik" activeClassName="activeLink">
-                <img src={White_Academic_Logo} className="sidebar-menu-icon" />
-                <div className="sidebar-menu-text">
-                    <p>Akademik</p>
-                    <p style={english_text}>Academic</p>
+        <section
+            id="sidebar"
+            style={{ backgroundColor: "#003250" }}
+            className="pt-5 h-100"
+        >
+            <img
+                src={UB_Logo}
+                style={UB_Logo_Style}
+                className="rounded mx-auto d-block"
+            />
+            <NavLink to="/akademik" activeClassName="activeLink">
+                <div className="sidebar-menu text-light mt-5 mb-4 pl-2">
+                    <p className="m-0">Akademik</p>
+                    <p className="m-0" style={english_text}>
+                        Academic
+                    </p>
                 </div>
             </NavLink>
-            <NavLink className="sidebar-menu" to="/registrasi" activeClassName="activeLink">
-                <img
-                    src={White_Registration_Logo}
-                    className="sidebar-menu-icon"
-                />
-                <div className="sidebar-menu-text">
-                    <p>Registrasi</p>
-                    <p style={english_text}>Registration</p>
+            <NavLink to="/registrasi" activeClassName="activeLink">
+                <div className="sidebar-menu text-light mb-4 pl-2">
+                    <p className="m-0">Registrasi</p>
+                    <p className="m-0" style={english_text}>
+                        Registration
+                    </p>
                 </div>
             </NavLink>
-            <NavLink className="sidebar-menu" to="/biodata" activeClassName="activeLink">
-                <img src={White_Bio_Logo} className="sidebar-menu-icon" />
-                <div className="sidebar-menu-text">
-                    <p>Biodata</p>
-                    <p style={english_text}>Biodata</p>
+            <NavLink to="/biodata" activeClassName="activeLink">
+                <div className="sidebar-menu text-light mb-4 pl-2">
+                    <p className="m-0">Biodata</p>
+                    <p className="m-0" style={english_text}>
+                        Biodata
+                    </p>
                 </div>
             </NavLink>
-            <NavLink className="sidebar-menu" to="/aplikasi" activeClassName="activeLink">
-                <img
-                    src={White_Application_Logo}
-                    className="sidebar-menu-icon"
-                />
-                <div className="sidebar-menu-text">
-                    <p>Aplikasi</p>
-                    <p style={english_text}>Application</p>
+            <NavLink to="/aplikasi" activeClassName="activeLink">
+                <div className="sidebar-menu text-light mb-4 pl-2">
+                    <p className="m-0">Aplikasi</p>
+                    <p className="m-0" style={english_text}>
+                        Application
+                    </p>
                 </div>
             </NavLink>
-            <NavLink className="sidebar-menu" to="/kemahasiswaan" activeClassName="activeLink">
-                <img src={White_Student_Logo} className="sidebar-menu-icon" />
-                <div className="sidebar-menu-text">
-                    <p>Kemahasiswaan</p>
-                    <p style={english_text}>Student Affairs</p>
+            <NavLink to="/kemahasiswaan" activeClassName="activeLink">
+                <div className="sidebar-menu text-light mb-4 pl-2">
+                    <p className="m-0">Kemahasiswaan</p>
+                    <p className="m-0" style={english_text}>
+                        Student Affairs
+                    </p>
                 </div>
             </NavLink>
-            <NavLink className="sidebar-menu" to="/login" activeClassName="activeLink">
-                <img src={White_SignOut_Logo} className="sidebar-menu-icon" />
-                <div className="sidebar-menu-text">
-                    <p>Keluar</p>
-                    <p style={english_text}>Log Out</p>
+            <NavLink to="/login" activeClassName="activeLink">
+                <div className="sidebar-menu text-light mb-4 pl-2">
+                    <p className="m-0">Keluar</p>
+                    <p className="m-0" style={english_text}>
+                        Log Out
+                    </p>
                 </div>
             </NavLink>
         </section>

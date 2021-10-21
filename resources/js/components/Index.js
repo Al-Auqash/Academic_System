@@ -10,9 +10,15 @@ function Index() {
         <Router>
             <Switch>
                 <Route path="/akademik">
-                    <div className="d-flex flex-row">
-                        <NavBar />
-                        <Academic />
+                    <div className="container m-0">
+                        <div className="row">
+                            <div className="p-0 col-2">
+                                <NavBar />
+                            </div>
+                            <div className="p-0 col-10">
+                                <Academic />
+                            </div>
+                        </div>
                     </div>
                 </Route>
             </Switch>

@@ -6,14 +6,14 @@ import News from "./News";
 import SubBar from "./SubBar";
 
 const Academic = () => {
-    const academic = {
-        width: "90vw",
-        marginLeft: "10vw",
-        padding: "5%",
-    };
+    // const academic = {
+    //     width: "90vw",
+    //     marginLeft: "10vw",
+    //     padding: "5%",
+    // };
 
     return (
-        <div style={academic}>
+        <div className="container">
             <Router>
                 <Switch>
                     <Route path="/akademik">
