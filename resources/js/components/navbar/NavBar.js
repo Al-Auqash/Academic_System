@@ -15,7 +15,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {
     const UB_Logo_Style = {
-        width: "50%",
+        // height: ",
+        padding: 0,
+        margin: 0,
     };
 
     const english_text = {
@@ -27,15 +29,17 @@ const NavBar = () => {
         <section
             id="sidebar"
             style={{ backgroundColor: "#003250" }}
-            className="pt-5 h-100"
+            className="navbar"
         >
-            <img
-                src={UB_Logo}
-                style={UB_Logo_Style}
-                className="rounded mx-auto d-block"
-            />
+            {/* <div className="nav-item">
+                <img
+                    src={UB_Logo}
+                    style={UB_Logo_Style}
+                    className="img-fluid"
+                />
+            </div> */}
             <NavLink to="/akademik" activeClassName="activeLink">
-                <div className="sidebar-menu text-light mt-5 mb-4 pl-2">
+                <div className="sidebar-menu text-light pl-2">
                     <p className="m-0">Akademik</p>
                     <p className="m-0" style={english_text}>
                         Academic
@@ -43,7 +47,7 @@ const NavBar = () => {
                 </div>
             </NavLink>
             <NavLink to="/registrasi" activeClassName="activeLink">
-                <div className="sidebar-menu text-light mb-4 pl-2">
+                <div className="sidebar-menu text-light pl-2">
                     <p className="m-0">Registrasi</p>
                     <p className="m-0" style={english_text}>
                         Registration
@@ -51,7 +55,7 @@ const NavBar = () => {
                 </div>
             </NavLink>
             <NavLink to="/biodata" activeClassName="activeLink">
-                <div className="sidebar-menu text-light mb-4 pl-2">
+                <div className="sidebar-menu text-light pl-2">
                     <p className="m-0">Biodata</p>
                     <p className="m-0" style={english_text}>
                         Biodata
@@ -59,7 +63,7 @@ const NavBar = () => {
                 </div>
             </NavLink>
             <NavLink to="/aplikasi" activeClassName="activeLink">
-                <div className="sidebar-menu text-light mb-4 pl-2">
+                <div className="sidebar-menu text-light pl-2">
                     <p className="m-0">Aplikasi</p>
                     <p className="m-0" style={english_text}>
                         Application
@@ -67,7 +71,7 @@ const NavBar = () => {
                 </div>
             </NavLink>
             <NavLink to="/kemahasiswaan" activeClassName="activeLink">
-                <div className="sidebar-menu text-light mb-4 pl-2">
+                <div className="sidebar-menu text-light pl-2">
                     <p className="m-0">Kemahasiswaan</p>
                     <p className="m-0" style={english_text}>
                         Student Affairs
@@ -75,7 +79,7 @@ const NavBar = () => {
                 </div>
             </NavLink>
             <NavLink to="/login" activeClassName="activeLink">
-                <div className="sidebar-menu text-light mb-4 pl-2">
+                <div className="sidebar-menu text-light pl-2">
                     <p className="m-0">Keluar</p>
                     <p className="m-0" style={english_text}>
                         Log Out

@@ -5011,14 +5011,14 @@ function Index() {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
         path: "/akademik",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-          className: "container-fluid m-0",
+          className: "container-fluid p-0 m-0",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-            className: "row w-100",
+            className: "col vw-100 p-0",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-              className: "p-0 col-2",
+              className: "p-0 m-0 row",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_navbar_NavBar__WEBPACK_IMPORTED_MODULE_2__.default, {})
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-              className: "col-10",
+              className: "row",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_academic_Academic__WEBPACK_IMPORTED_MODULE_3__.default, {})
             })]
           })
@@ -5137,73 +5137,73 @@ var Biodata = function Biodata() {
         className: "table-borderless",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
-            width: "20%",
+            width: "50%",
             children: "NIM"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
-            width: "80%",
+            width: "50%",
             className: "pl-4",
             children: "NIM"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
-            width: "20%",
+            width: "50%",
             children: "Nama"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
-            width: "80%",
+            width: "50%",
             className: "pl-4",
             children: "Nama"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
-            width: "20%",
+            width: "50%",
             children: "Jenjang/Fakultas"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
-            width: "80%",
+            width: "50%",
             className: "pl-4",
             children: "Jenjang/Fakultas"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
-            width: "20%",
+            width: "50%",
             children: "Jurusan"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
-            width: "80%",
+            width: "50%",
             className: "pl-4",
             children: "Jurusan"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
-            width: "20%",
+            width: "50%",
             children: "Program Studi"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
-            width: "80%",
+            width: "50%",
             className: "pl-4",
             children: "Program Studi"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
-            width: "20%",
+            width: "50%",
             children: "Seleksi"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
-            width: "80%",
+            width: "50%",
             className: "pl-4",
             children: "Seleksi"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
-            width: "20%",
+            width: "50%",
             children: "Nomor Ujian"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
-            width: "80%",
+            width: "50%",
             className: "pl-4",
             children: "Nomor Ujian"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
-            width: "20%",
+            width: "50%",
             children: "Status"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
-            width: "80%",
+            width: "50%",
             className: "pl-4",
             children: "Status"
           })]
@@ -5324,10 +5324,6 @@ var SubBar = function SubBar() {
   var subBar = {
     width: "50%"
   };
-  var flexColumn = {
-    display: "flex",
-    flexDirection: "column"
-  };
   var subBarItem = {
     fontSize: "1rem"
   };
@@ -5338,11 +5334,12 @@ var SubBar = function SubBar() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     style: subBar,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      style: flexColumn,
+      className: "d-flex flex-column",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
         to: "#",
         style: subBarItem,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "m-0 p-0",
           children: "Presensi Online"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
           style: englishText,
@@ -5352,6 +5349,7 @@ var SubBar = function SubBar() {
         to: "#",
         style: subBarItem,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "m-0 p-0",
           children: "Kartu Rencana Studi"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
           style: englishText,
@@ -5361,6 +5359,7 @@ var SubBar = function SubBar() {
         to: "#",
         style: subBarItem,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "m-0 p-0",
           children: "Kartu Hasil Studi"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
           style: englishText,
@@ -5370,6 +5369,7 @@ var SubBar = function SubBar() {
         to: "#",
         style: subBarItem,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "m-0 p-0",
           children: "Jadwal Kuliah"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
           style: englishText,
@@ -5379,6 +5379,7 @@ var SubBar = function SubBar() {
         to: "#",
         style: subBarItem,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "m-0 p-0",
           children: "Jadwal Ujian"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
           style: englishText,
@@ -5388,6 +5389,7 @@ var SubBar = function SubBar() {
         to: "#",
         style: subBarItem,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "m-0 p-0",
           children: "Absensi"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
           style: englishText,
@@ -5397,6 +5399,7 @@ var SubBar = function SubBar() {
         to: "#",
         style: subBarItem,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+          className: "m-0 p-0",
           children: "Rekap Hasil Studi"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
           style: englishText,
@@ -5450,7 +5453,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var NavBar = function NavBar() {
   var UB_Logo_Style = {
-    width: "50%"
+    // height: ",
+    padding: 0,
+    margin: 0
   };
   var english_text = {
     fontStyle: "italic",
@@ -5461,16 +5466,12 @@ var NavBar = function NavBar() {
     style: {
       backgroundColor: "#003250"
     },
-    className: "pt-5 h-100",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("img", {
-      src: _images_Logo_Universitas_Brawijaya_png__WEBPACK_IMPORTED_MODULE_2__.default,
-      style: UB_Logo_Style,
-      className: "rounded mx-auto d-block"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
+    className: "navbar",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
       to: "/akademik",
       activeClassName: "activeLink",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light mt-5 mb-4 pl-2",
+        className: "sidebar-menu text-light pl-2",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
           className: "m-0",
           children: "Akademik"
@@ -5484,7 +5485,7 @@ var NavBar = function NavBar() {
       to: "/registrasi",
       activeClassName: "activeLink",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light mb-4 pl-2",
+        className: "sidebar-menu text-light pl-2",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
           className: "m-0",
           children: "Registrasi"
@@ -5498,7 +5499,7 @@ var NavBar = function NavBar() {
       to: "/biodata",
       activeClassName: "activeLink",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light mb-4 pl-2",
+        className: "sidebar-menu text-light pl-2",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
           className: "m-0",
           children: "Biodata"
@@ -5512,7 +5513,7 @@ var NavBar = function NavBar() {
       to: "/aplikasi",
       activeClassName: "activeLink",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light mb-4 pl-2",
+        className: "sidebar-menu text-light pl-2",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
           className: "m-0",
           children: "Aplikasi"
@@ -5526,7 +5527,7 @@ var NavBar = function NavBar() {
       to: "/kemahasiswaan",
       activeClassName: "activeLink",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light mb-4 pl-2",
+        className: "sidebar-menu text-light pl-2",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
           className: "m-0",
           children: "Kemahasiswaan"
@@ -5540,7 +5541,7 @@ var NavBar = function NavBar() {
       to: "/login",
       activeClassName: "activeLink",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light mb-4 pl-2",
+        className: "sidebar-menu text-light pl-2",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
           className: "m-0",
           children: "Keluar"

@@ -6,11 +6,6 @@ const SubBar = () => {
         width: "50%",
     };
 
-    const flexColumn = {
-        display: "flex",
-        flexDirection: "column",
-    };
-
     const subBarItem = {
         fontSize: "1rem",
     };
@@ -22,33 +17,33 @@ const SubBar = () => {
 
     return (
         <div style={subBar}>
-            <div style={flexColumn}>
-                <NavLink to="#" style={subBarItem}>
-                    <p>Presensi Online</p>
+            <div className="d-flex flex-column">
+                <NavLink to="#" style={subBarItem} >
+                    <p className="m-0 p-0" >Presensi Online</p>
                     <p style={englishText}>Online Presence</p>
                 </NavLink>
                 <NavLink to="#" style={subBarItem}>
-                    <p>Kartu Rencana Studi</p>
+                    <p className="m-0 p-0">Kartu Rencana Studi</p>
                     <p style={englishText}>Course Selection Sheet</p>
                 </NavLink>
                 <NavLink to="#" style={subBarItem}>
-                    <p>Kartu Hasil Studi</p>
+                    <p className="m-0 p-0">Kartu Hasil Studi</p>
                     <p style={englishText}>Course Grade</p>
                 </NavLink>
                 <NavLink to="#" style={subBarItem}>
-                    <p>Jadwal Kuliah</p>
+                    <p className="m-0 p-0">Jadwal Kuliah</p>
                     <p style={englishText}>Course Schedule</p>
                 </NavLink>
                 <NavLink to="#" style={subBarItem}>
-                    <p>Jadwal Ujian</p>
+                    <p className="m-0 p-0">Jadwal Ujian</p>
                     <p style={englishText}>Exam Schedule</p>
                 </NavLink>
                 <NavLink to="#" style={subBarItem}>
-                    <p>Absensi</p>
+                    <p className="m-0 p-0">Absensi</p>
                     <p style={englishText}>Attendance</p>
                 </NavLink>
                 <NavLink to="#" style={subBarItem}>
-                    <p>Rekap Hasil Studi</p>
+                    <p className="m-0 p-0">Rekap Hasil Studi</p>
                     <p style={englishText}>Summary of Course Grades</p>
                 </NavLink>
             </div>
