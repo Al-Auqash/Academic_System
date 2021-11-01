@@ -11,11 +11,13 @@ function Index() {
             <Switch>
                 <Route path="/akademik">
                     <div className="container-fluid p-0 m-0">
-                        <div className="col vw-100 p-0">
-                            <div className="p-0 m-0 row">
+                        <div className="row">
+                            <div className="col">
                                 <NavBar />
                             </div>
-                            <div className="row">
+                        </div>
+                        <div className="row" style={{ marginTop: "15vh" }}>
+                            <div className="col">
                                 <Academic />
                             </div>
                         </div>

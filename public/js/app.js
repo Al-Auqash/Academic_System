@@ -5010,18 +5010,24 @@ function Index() {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Switch, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
         path: "/akademik",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
           className: "container-fluid p-0 m-0",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-            className: "col vw-100 p-0",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-              className: "p-0 m-0 row",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "row",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              className: "col",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_navbar_NavBar__WEBPACK_IMPORTED_MODULE_2__.default, {})
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-              className: "row",
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "row",
+            style: {
+              marginTop: "15vh"
+            },
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              className: "col",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_academic_Academic__WEBPACK_IMPORTED_MODULE_3__.default, {})
-            })]
-          })
+            })
+          })]
         })
       })
     })
@@ -5461,97 +5467,101 @@ var NavBar = function NavBar() {
     fontStyle: "italic",
     fontSize: "0.78em"
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("section", {
-    id: "sidebar",
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("nav", {
+    id: "navbar",
     style: {
       backgroundColor: "#003250"
     },
-    className: "navbar",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
-      to: "/akademik",
-      activeClassName: "activeLink",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light pl-2",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          children: "Akademik"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          style: english_text,
-          children: "Academic"
+    className: "navbar fixed-top navbar-expand-lg p-0",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
+      className: "collapse navbar-collapse",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
+        to: "#",
+        className: "nav-bar-brand m-2",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("img", {
+          src: _images_Logo_Universitas_Brawijaya_png__WEBPACK_IMPORTED_MODULE_2__.default,
+          style: UB_Logo_Style,
+          width: "75",
+          height: "75",
+          className: "img-fluid"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("ul", {
+        className: "navbar-nav",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
+          className: "nav-item mx-4 item-menu",
+          to: "/akademik",
+          activeClassName: "activeLink",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            children: "Akademik"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            style: english_text,
+            children: "Academic"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
+          className: "nav-item mx-4 item-menu",
+          to: "/registrasi",
+          activeClassName: "activeLink",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            children: "Registrasi"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            style: english_text,
+            children: "Registration"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
+          className: "nav-item mx-4 item-menu",
+          to: "/biodata",
+          activeClassName: "activeLink",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            children: "Biodata"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            style: english_text,
+            children: "Biodata"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
+          className: "nav-item mx-4 item-menu",
+          to: "/aplikasi",
+          activeClassName: "activeLink",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            children: "Aplikasi"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            style: english_text,
+            children: "Application"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
+          className: "nav-item mx-4 item-menu",
+          to: "/kemahasiswaan",
+          activeClassName: "activeLink",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            children: "Kemahasiswaan"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            style: english_text,
+            children: "Student Affairs"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
+          className: "nav-item mx-4 item-menu",
+          to: "/login",
+          activeClassName: "activeLink",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            children: "Keluar"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
+            className: "m-0",
+            style: english_text,
+            children: "Log Out"
+          })]
         })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
-      to: "/registrasi",
-      activeClassName: "activeLink",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light pl-2",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          children: "Registrasi"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          style: english_text,
-          children: "Registration"
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
-      to: "/biodata",
-      activeClassName: "activeLink",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light pl-2",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          children: "Biodata"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          style: english_text,
-          children: "Biodata"
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
-      to: "/aplikasi",
-      activeClassName: "activeLink",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light pl-2",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          children: "Aplikasi"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          style: english_text,
-          children: "Application"
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
-      to: "/kemahasiswaan",
-      activeClassName: "activeLink",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light pl-2",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          children: "Kemahasiswaan"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          style: english_text,
-          children: "Student Affairs"
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.NavLink, {
-      to: "/login",
-      activeClassName: "activeLink",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)("div", {
-        className: "sidebar-menu text-light pl-2",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          children: "Keluar"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("p", {
-          className: "m-0",
-          style: english_text,
-          children: "Log Out"
-        })]
-      })
-    })]
+      })]
+    })
   });
 };
 
@@ -10017,7 +10027,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "#sidebar {\r\n    background-color: #003250;\r\n}\r\n.activeLink {\r\n    background-color: #0784b5;\r\n}\r\n.sidebar-menu:hover {\r\n    background-color: #0784b5;\r\n    cursor: pointer;\r\n    color: #ffffff;\r\n}\r\na:hover {\r\n    text-decoration: none;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "#navbar {\r\n    background-color: #003250;\r\n}\r\n.item-menu {\r\n    color: #ffffff;\r\n}\r\n.item-menu:hover {\r\n    /* background-color: #0784b5; */\r\n    cursor: pointer;\r\n    color: #ff9900;\r\n    /* color: #FFB444; */\r\n}\r\na:hover {\r\n    text-decoration: none;\r\n    /* text-decoration: underline;\r\n    text-decoration-color: #ff9900; */\r\n}\r\n\r\n.activeLink {\r\n    /* background-color: #0784b5; */\r\n    font-weight: bold;\r\n    color: #ff9900;\r\n    /* text-decoration: underline;\r\n    text-decoration-color: #ff9900; */\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

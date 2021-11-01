@@ -1,14 +1,25 @@
-#sidebar {
+#navbar {
     background-color: #003250;
 }
-.activeLink {
-    background-color: #0784b5;
-}
-.sidebar-menu:hover {
-    background-color: #0784b5;
-    cursor: pointer;
+.item-menu {
     color: #ffffff;
+}
+.item-menu:hover {
+    /* background-color: #0784b5; */
+    cursor: pointer;
+    color: #ff9900;
+    /* color: #FFB444; */
 }
 a:hover {
     text-decoration: none;
+    /* text-decoration: underline;
+    text-decoration-color: #ff9900; */
+}
+
+.activeLink {
+    /* background-color: #0784b5; */
+    font-weight: bold;
+    color: #ff9900;
+    /* text-decoration: underline;
+    text-decoration-color: #ff9900; */
 }
