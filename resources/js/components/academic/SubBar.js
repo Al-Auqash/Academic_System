@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../../../css/NavBar.css";
 
 const SubBar = () => {
     const subBar = {
@@ -18,33 +19,47 @@ const SubBar = () => {
     return (
         <div style={subBar}>
             <div className="d-flex flex-column">
-                <NavLink to="#" style={subBarItem} >
-                    <p className="m-0 p-0" >Presensi Online</p>
-                    <p style={englishText}>Online Presence</p>
+                <NavLink exact to="akademik/presensi-online" style={subBarItem} activeClassName="activeLink">
+                    <p className="text-dark m-0 p-0">Presensi Online</p>
+                    <p className="text-dark" style={englishText}>
+                        Online Presence
+                    </p>
                 </NavLink>
-                <NavLink to="#" style={subBarItem}>
-                    <p className="m-0 p-0">Kartu Rencana Studi</p>
-                    <p style={englishText}>Course Selection Sheet</p>
+                <NavLink exact to="akademik/kartu-rencana-studi" style={subBarItem} activeClassName="activeLink">
+                    <p className="text-dark m-0 p-0">Kartu Rencana Studi</p>
+                    <p className="text-dark" style={englishText}>
+                        Course Selection Sheet
+                    </p>
                 </NavLink>
-                <NavLink to="#" style={subBarItem}>
-                    <p className="m-0 p-0">Kartu Hasil Studi</p>
-                    <p style={englishText}>Course Grade</p>
+                <NavLink exact to="akademik/kartu-hasil-studi" style={subBarItem} activeClassName="activeLink">
+                    <p className="text-dark m-0 p-0">Kartu Hasil Studi</p>
+                    <p className="text-dark" style={englishText}>
+                        Course Grade
+                    </p>
                 </NavLink>
-                <NavLink to="#" style={subBarItem}>
-                    <p className="m-0 p-0">Jadwal Kuliah</p>
-                    <p style={englishText}>Course Schedule</p>
+                <NavLink exact to="akademik/jadwal-kuliah" style={subBarItem} activeClassName="activeLink">
+                    <p className="text-dark m-0 p-0">Jadwal Kuliah</p>
+                    <p className="text-dark" style={englishText}>
+                        Course Schedule
+                    </p>
                 </NavLink>
-                <NavLink to="#" style={subBarItem}>
-                    <p className="m-0 p-0">Jadwal Ujian</p>
-                    <p style={englishText}>Exam Schedule</p>
+                <NavLink exact to="akademik/jadwal-ujian" style={subBarItem} activeClassName="activeLink">
+                    <p className="text-dark m-0 p-0">Jadwal Ujian</p>
+                    <p className="text-dark" style={englishText}>
+                        Exam Schedule
+                    </p>
                 </NavLink>
-                <NavLink to="#" style={subBarItem}>
-                    <p className="m-0 p-0">Absensi</p>
-                    <p style={englishText}>Attendance</p>
+                <NavLink exact to="akademik/absensi" style={subBarItem} activeClassName="activeLink">
+                    <p className="text-dark m-0 p-0">Absensi</p>
+                    <p className="text-dark" style={englishText}>
+                        Attendance
+                    </p>
                 </NavLink>
-                <NavLink to="#" style={subBarItem}>
-                    <p className="m-0 p-0">Rekap Hasil Studi</p>
-                    <p style={englishText}>Summary of Course Grades</p>
+                <NavLink exact to="akademik/rekap-hasil-studi" style={subBarItem} activeClassName="activeLink">
+                    <p className="text-dark m-0 p-0">Rekap Hasil Studi</p>
+                    <p className="text-dark" style={englishText}>
+                        Summary of Course Grades
+                    </p>
                 </NavLink>
             </div>
         </div>

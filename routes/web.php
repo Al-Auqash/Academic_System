@@ -22,6 +22,10 @@ Route::get('/akademik', function () {
     return view('index');
 });
 
+Route::get('/akademik/presensi-online', function () {
+    return view('index');
+});
+
 Auth::routes();
 
 Route::get('/akademik', [HomeController::class, 'index'])->name('akademik');
