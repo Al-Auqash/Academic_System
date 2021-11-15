@@ -1,5 +1,6 @@
 #navbar {
     background-color: #003250;
+    z-index: 3;
 }
 .item-menu {
     color: #ffffff;

@@ -5011,15 +5011,15 @@ function Index() {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
         path: "/akademik",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
-          className: "container p-0 mx-50",
+          className: "p-0",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-            className: "row m-0",
+            className: "row m-0 w-50",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
               className: "col",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_navbar_NavBar__WEBPACK_IMPORTED_MODULE_2__.default, {})
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-            className: "row px-5",
+            className: "row px-5 ml-0 mr-0",
             style: {
               marginTop: "15vh"
             },
@@ -10091,7 +10091,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "#navbar {\r\n    background-color: #003250;\r\n}\r\n.item-menu {\r\n    color: #ffffff;\r\n}\r\n.item-menu:hover {\r\n    /* background-color: #0784b5; */\r\n    cursor: pointer;\r\n    color: #ff9900;\r\n    /* color: #FFB444; */\r\n}\r\na:hover {\r\n    text-decoration: none;\r\n    /* text-decoration: underline;\r\n    text-decoration-color: #ff9900; */\r\n}\r\n\r\n.activeLink {\r\n    /* background-color: #0784b5; */\r\n    font-weight: bold;\r\n    color: #ff9900;\r\n    /* text-decoration: underline;\r\n    text-decoration-color: #ff9900; */\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "#navbar {\r\n    background-color: #003250;\r\n    z-index: 3;\r\n}\r\n.item-menu {\r\n    color: #ffffff;\r\n}\r\n.item-menu:hover {\r\n    /* background-color: #0784b5; */\r\n    cursor: pointer;\r\n    color: #ff9900;\r\n    /* color: #FFB444; */\r\n}\r\na:hover {\r\n    text-decoration: none;\r\n    /* text-decoration: underline;\r\n    text-decoration-color: #ff9900; */\r\n}\r\n\r\n.activeLink {\r\n    /* background-color: #0784b5; */\r\n    font-weight: bold;\r\n    color: #ff9900;\r\n    /* text-decoration: underline;\r\n    text-decoration-color: #ff9900; */\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
