@@ -6,14 +6,12 @@ import News from "./News";
 import SubBar from "./SubBar";
 
 const Academic = () => {
-    // const academic = {
-    //     width: "90vw",
-    //     marginLeft: "10vw",
-    //     padding: "5%",
-    // };
+    const academic = {
+        backgroundColor: "#FFF7F7",
+    };
 
     return (
-        <div className="container-fluid p-4 border rounded bg-light">
+        <div className="container-fluid p-5 border rounded" style={academic}>
             <Router>
                 <Switch>
                     <Route path="/akademik">

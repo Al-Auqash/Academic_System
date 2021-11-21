@@ -7,12 +7,19 @@ const Content = () => {
         backgroundColor: "#003250",
     };
 
+    const quote = {
+        fontFamily: "'Callina', sans-serif",
+        fontSize: "36pt"
+    }
+
     return (
-        <section style={content}>
+        <section style={content} className="d-flex flex-column justify-content-center align-items-center p-2">
             <Router>
                 <Switch>
                     <Route exact path="/akademik">
-                        <p className="text-white">Stay Positive</p>
+                        <p style={quote} className="text-white align-middle font-italic">"Stay Positive"</p>
+                        <br />
+                        <p style={quote} className="text-white align-middle font-italic">~ itash ~</p>
                     </Route>
                     <Route exact path="/akademik/presensi-online">
                         <p>presensi online</p>

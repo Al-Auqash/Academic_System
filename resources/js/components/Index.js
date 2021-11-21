@@ -16,7 +16,7 @@ function Index() {
                                 <NavBar />
                             </div>
                         </div>
-                        <div className="row px-5 ml-0 mr-0" style={{ marginTop: "15vh" }} >
+                        <div className="row px-4 ml-0 mr-0" style={{ marginTop: "15vh" }} >
                             <div className="col">
                                 <Academic />
                             </div>
