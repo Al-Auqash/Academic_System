@@ -23,6 +23,7 @@ const Academic = () => {
                                 <News />
                             </div>
                         </div>
+                        <hr class="box-divider" />
                         <div className="row mt-5">
                             <SubBar />
                             <Content />
