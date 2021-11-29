@@ -5087,7 +5087,7 @@ var Academic = function Academic() {
               className: "col-9 p-0 m-0",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Biodata__WEBPACK_IMPORTED_MODULE_1__.default, {})
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-              className: "col-3",
+              className: "col-3 p-0 m-0",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_News__WEBPACK_IMPORTED_MODULE_3__.default, {})
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("hr", {
@@ -5337,7 +5337,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var News = function News() {
   var news = {
-    width: "40%",
+    width: "100%",
+    height: "100%",
     backgroundColor: "#003250",
     color: "#ffffff",
     display: "flex",
@@ -5349,7 +5350,7 @@ var News = function News() {
     style: news,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-        children: "NEWS"
+        children: "Nothing is happening right now"
       })
     })
   });

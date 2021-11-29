@@ -9,17 +9,31 @@ const Content = () => {
 
     const quote = {
         fontFamily: "'Callina', sans-serif",
-        fontSize: "36pt"
-    }
+        fontSize: "36pt",
+    };
+
 
     return (
-        <section style={content} className="d-flex flex-column justify-content-center align-items-center p-2">
+        <section
+            style={content}
+            className="d-flex flex-column justify-content-center align-items-center p-2"
+        >
             <Router>
                 <Switch>
                     <Route exact path="/akademik">
-                        <p style={quote} className="text-white align-middle font-italic">"Stay Positive"</p>
+                        <p
+                            style={quote}
+                            className="text-white align-middle font-italic"
+                        >
+                            "Stay Positive"
+                        </p>
                         <br />
-                        <p style={quote} className="text-white align-middle font-italic">~ itash ~</p>
+                        <p
+                            style={quote}
+                            className="text-white align-middle font-italic"
+                        >
+                            ~ itash ~
+                        </p>
                     </Route>
                     <Route exact path="/akademik/presensi-online">
                         <p>presensi online</p>

@@ -19,7 +19,7 @@ const Academic = () => {
                             <div className="col-9 p-0 m-0">
                                 <Biodata />
                             </div>
-                            <div className="col-3">
+                            <div className="col-3 p-0 m-0">
                                 <News />
                             </div>
                         </div>

@@ -2,7 +2,8 @@ import React from "react";
 
 const News = () => {
     const news = {
-        width: "40%",
+        width: "100%",
+        height: "100%",
         backgroundColor: "#003250",
         color: "#ffffff",
         display: "flex",
@@ -14,7 +15,7 @@ const News = () => {
     return (
         <section style={news}>
             <div>
-                <p>NEWS</p>
+                <p>Nothing is happening right now</p>
             </div>
         </section>
     );
