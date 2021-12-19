@@ -26,6 +26,30 @@ Route::get('/akademik/presensi-online', function () {
     return view('index');
 });
 
+Route::get('/akademik/kartu-rencana-studi', function () {
+    return view('index');
+});
+
+Route::get('/akademik/kartu-hasil-studi', function () {
+    return view('index');
+});
+
+Route::get('/akademik/jadwal-kuliah', function () {
+    return view('index');
+});
+
+Route::get('/akademik/jadwal-ujian', function () {
+    return view('index');
+});
+
+Route::get('/akademik/absensi', function () {
+    return view('index');
+});
+
+Route::get('/akademik/rekap-hasil-studi', function () {
+    return view('index');
+});
+
 Auth::routes();
 
 Route::get('/akademik', [HomeController::class, 'index'])->name('akademik');

@@ -5398,7 +5398,7 @@ var SubBar = function SubBar() {
       className: "d-flex flex-column",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
         exact: true,
-        to: "akademik/presensi-online",
+        to: "/akademik/presensi-online",
         style: subBarItem,
         activeClassName: "activeLink",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
@@ -5411,7 +5411,7 @@ var SubBar = function SubBar() {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
         exact: true,
-        to: "akademik/kartu-rencana-studi",
+        to: "/akademik/kartu-rencana-studi",
         style: subBarItem,
         activeClassName: "activeLink",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
@@ -5424,7 +5424,7 @@ var SubBar = function SubBar() {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
         exact: true,
-        to: "akademik/kartu-hasil-studi",
+        to: "/akademik/kartu-hasil-studi",
         style: subBarItem,
         activeClassName: "activeLink",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
@@ -5437,7 +5437,7 @@ var SubBar = function SubBar() {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
         exact: true,
-        to: "akademik/jadwal-kuliah",
+        to: "/akademik/jadwal-kuliah",
         style: subBarItem,
         activeClassName: "activeLink",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
@@ -5450,7 +5450,7 @@ var SubBar = function SubBar() {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
         exact: true,
-        to: "akademik/jadwal-ujian",
+        to: "/akademik/jadwal-ujian",
         style: subBarItem,
         activeClassName: "activeLink",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
@@ -5463,7 +5463,7 @@ var SubBar = function SubBar() {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
         exact: true,
-        to: "akademik/absensi",
+        to: "/akademik/absensi",
         style: subBarItem,
         activeClassName: "activeLink",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
@@ -5476,7 +5476,7 @@ var SubBar = function SubBar() {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
         exact: true,
-        to: "akademik/rekap-hasil-studi",
+        to: "/akademik/rekap-hasil-studi",
         style: subBarItem,
         activeClassName: "activeLink",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
