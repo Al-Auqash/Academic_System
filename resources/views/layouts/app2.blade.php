@@ -28,7 +28,7 @@
     @include('navigation')
 
     <main class="p-4">
-        @yield('content')
+        @yield('contents')
     </main>
 </div>
 </body>

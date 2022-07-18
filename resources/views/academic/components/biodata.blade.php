@@ -1,9 +1,11 @@
 <div class="biodata row">
-    <img
-        class="col-3 mx-auto rounded"
-        src="{{asset('/images/user-ex.jpg')}}"
-        alt="not found"
-    />
+    <div class="col-3">
+        <img
+            class="img-fluid mw-100 h-auto"
+            src="{{asset('/images/user-ex.jpg')}}"
+            alt="not found"
+        />
+    </div>
     <div class="col-9">
         <table class="table-borderless">
             <tr>

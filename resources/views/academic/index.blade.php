@@ -1,6 +1,6 @@
 @extends('layouts.app2')
 
-@section('content')
+@section('contents')
     <div class="container-fluid p-5 border rounded cs-background-grey">
         <div class="row rounded">
             <div class="col-9 p-0 m-0">
@@ -17,9 +17,9 @@
             </div>
             <div class="col-9 p-0 m-0">
 {{--                @if( \Request::is('') )--}}
-{{--                    @include('academic.components.content')--}}
+{{--                    @include('academic.components.contents')--}}
 {{--                @elseif(Request::is('presensi-online'))--}}
-{{--                    @include('academic.components.content.presence')--}}
+{{--                    @include('academic.components.contents.presence')--}}
 {{--                @else--}}
 {{--                    <p>ahahahah</p>--}}
 {{--                @endif--}}

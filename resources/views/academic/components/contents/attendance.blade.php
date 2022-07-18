@@ -7,7 +7,7 @@
         <p
             class="text-white align-middle font-italic"
         >
-            presensi onlinee
+            attendance
         </p>
     </div>
 @endsection

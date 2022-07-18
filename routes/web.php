@@ -63,6 +63,6 @@ Route::prefix('akademik')->group(function () {
     Route::get('/kartu-hasil-studi', [AcademicController::class, 'courseGrade']);
     Route::get('/jadwal-kuliah', [AcademicController::class, 'courseSchedule']);
     Route::get('/jadwal-ujian', [AcademicController::class, 'examSchedule']);
-    Route::get('/absensi', [AcademicController::class, 'attedance']);
+    Route::get('/absensi', [AcademicController::class, 'attendance']);
     Route::get('/rekap-hasil-studi', [AcademicController::class, 'summaryCourseGrade']);
 });

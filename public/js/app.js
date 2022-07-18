@@ -4886,7 +4886,7 @@ function extend(a, b, thisArg) {
  * Remove byte order marker. This catches EF BB BF (the UTF-8 BOM)
  *
  * @param {string} content with BOM
- * @return {string} content value without BOM
+ * @return {string} contents value without BOM
  */
 function stripBOM(content) {
   if (content.charCodeAt(0) === 0xFEFF) {
@@ -5252,7 +5252,7 @@ var Content = function Content() {
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("section", {
     style: content,
-    className: "d-flex flex-column justify-content-center align-items-center p-2",
+    className: "d-flex flex-column justify-contents-center align-items-center p-2",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.BrowserRouter, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Switch, {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, {
@@ -8167,13 +8167,13 @@ var NavBar = function NavBar() {
         // Note: DOMNode.style.paddingRight returns the actual value or '' if not set
         //   while $(DOMNode).css('padding-right') returns the calculated value or 0 if not set
         var fixedContent = [].slice.call(document.querySelectorAll(SELECTOR_FIXED_CONTENT));
-        var stickyContent = [].slice.call(document.querySelectorAll(SELECTOR_STICKY_CONTENT)); // Adjust fixed content padding
+        var stickyContent = [].slice.call(document.querySelectorAll(SELECTOR_STICKY_CONTENT)); // Adjust fixed contents padding
 
         $__default['default'](fixedContent).each(function (index, element) {
           var actualPadding = element.style.paddingRight;
           var calculatedPadding = $__default['default'](element).css('padding-right');
           $__default['default'](element).data('padding-right', actualPadding).css('padding-right', parseFloat(calculatedPadding) + _this10._scrollbarWidth + "px");
-        }); // Adjust sticky content margin
+        }); // Adjust sticky contents margin
 
         $__default['default'](stickyContent).each(function (index, element) {
           var actualMargin = element.style.marginRight;
@@ -8190,13 +8190,13 @@ var NavBar = function NavBar() {
     };
 
     _proto._resetScrollbar = function _resetScrollbar() {
-      // Restore fixed content padding
+      // Restore fixed contents padding
       var fixedContent = [].slice.call(document.querySelectorAll(SELECTOR_FIXED_CONTENT));
       $__default['default'](fixedContent).each(function (index, element) {
         var padding = $__default['default'](element).data('padding-right');
         $__default['default'](element).removeData('padding-right');
         element.style.paddingRight = padding ? padding : '';
-      }); // Restore sticky content
+      }); // Restore sticky contents
 
       var elements = [].slice.call(document.querySelectorAll("" + SELECTOR_STICKY_CONTENT));
       $__default['default'](elements).each(function (index, element) {
@@ -9236,7 +9236,7 @@ var NavBar = function NavBar() {
     ;
 
     _proto._getContent = function _getContent() {
-      return this.element.getAttribute('data-content') || this.config.content;
+      return this.element.getAttribute('data-contents') || this.config.content;
     };
 
     _proto._cleanTipClass = function _cleanTipClass() {
@@ -12699,7 +12699,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 
 			// Select is set to empty string on purpose
 			// This is to test IE's treatment of not explicitly
-			// setting a boolean content attribute,
+			// setting a boolean contents attribute,
 			// since its presence should be enough
 			// https://bugs.jquery.com/ticket/12359
 			docElem.appendChild( el ).innerHTML = "<a id='" + expando + "'></a>" +
@@ -13581,7 +13581,7 @@ Expr = Sizzle.selectors = {
 		"empty": function( elem ) {
 
 			// http://www.w3.org/TR/selectors/#empty-pseudo
-			// :empty is negated by element (1) or content nodes (text: 3; cdata: 4; entity ref: 5),
+			// :empty is negated by element (1) or contents nodes (text: 3; cdata: 4; entity ref: 5),
 			//   but not by others (comment: 8; processing instruction: 7; etc.)
 			// nodeType < 6 works because attributes (2) do not appear as children
 			for ( elem = elem.firstChild; elem; elem = elem.nextSibling ) {
@@ -16408,7 +16408,7 @@ function buildFragment( elems, context, scripts, selection, ignored ) {
 				wrap = wrapMap[ tag ] || wrapMap._default;
 				tmp.innerHTML = wrap[ 1 ] + jQuery.htmlPrefilter( elem ) + wrap[ 2 ];
 
-				// Descend through wrappers to the right content
+				// Descend through wrappers to the right contents
 				j = wrap[ 0 ];
 				while ( j-- ) {
 					tmp = tmp.lastChild;
@@ -17436,7 +17436,7 @@ function domManip( collection, args, callback, ignored ) {
 			fragment = first;
 		}
 
-		// Require either new content or an interest in ignored elements to invoke the callback
+		// Require either new contents or an interest in ignored elements to invoke the callback
 		if ( first || ignored ) {
 			scripts = jQuery.map( getAll( fragment, "script" ), disableScript );
 			hasScripts = scripts.length;
@@ -17722,7 +17722,7 @@ jQuery.fn.extend( {
 	replaceWith: function() {
 		var ignored = [];
 
-		// Make the changes, replacing each non-ignored context element with the new content
+		// Make the changes, replacing each non-ignored context element with the new contents
 		return domManip( this, arguments, function( elem ) {
 			var parent = this.parentNode;
 
@@ -17836,7 +17836,7 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 		pixelBoxStylesVal = roundPixelMeasures( divStyle.right ) === 36;
 
 		// Support: IE 9 - 11 only
-		// Detect misreporting of content dimensions for box-sizing:border-box elements
+		// Detect misreporting of contents dimensions for box-sizing:border-box elements
 		boxSizingReliableVal = roundPixelMeasures( divStyle.width ) === 36;
 
 		// Support: IE 9 only
@@ -17869,9 +17869,9 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 
 	// Support: IE <=9 - 11 only
 	// Style of cloned element affects source element cloned (#8908)
-	div.style.backgroundClip = "content-box";
+	div.style.backgroundClip = "contents-box";
 	div.cloneNode( true ).style.backgroundClip = "";
-	support.clearCloneStyle = div.style.backgroundClip === "content-box";
+	support.clearCloneStyle = div.style.backgroundClip === "contents-box";
 
 	jQuery.extend( support, {
 		boxSizingReliable: function() {
@@ -18094,7 +18094,7 @@ function boxModelAdjustment( elem, dimension, box, isBorderBox, styles, computed
 			delta += jQuery.css( elem, box + cssExpand[ i ], true, styles );
 		}
 
-		// If we get here with a content-box, we're seeking "padding" or "border" or "margin"
+		// If we get here with a contents-box, we're seeking "padding" or "border" or "margin"
 		if ( !isBorderBox ) {
 
 			// Add padding
@@ -18109,26 +18109,26 @@ function boxModelAdjustment( elem, dimension, box, isBorderBox, styles, computed
 				extra += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
 			}
 
-		// If we get here with a border-box (content + padding + border), we're seeking "content" or
+		// If we get here with a border-box (contents + padding + border), we're seeking "contents" or
 		// "padding" or "margin"
 		} else {
 
-			// For "content", subtract padding
+			// For "contents", subtract padding
 			if ( box === "content" ) {
 				delta -= jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
 			}
 
-			// For "content" or "padding", subtract border
+			// For "contents" or "padding", subtract border
 			if ( box !== "margin" ) {
 				delta -= jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
 			}
 		}
 	}
 
-	// Account for positive content-box scroll gutter when requested by providing computedVal
+	// Account for positive contents-box scroll gutter when requested by providing computedVal
 	if ( !isBorderBox && computedVal >= 0 ) {
 
-		// offsetWidth/offsetHeight is a rounded sum of content, padding, scroll gutter, and border
+		// offsetWidth/offsetHeight is a rounded sum of contents, padding, scroll gutter, and border
 		// Assuming integer scroll gutter, subtract the rest and round down
 		delta += Math.max( 0, Math.ceil(
 			elem[ "offset" + dimension[ 0 ].toUpperCase() + dimension.slice( 1 ) ] -
@@ -18137,7 +18137,7 @@ function boxModelAdjustment( elem, dimension, box, isBorderBox, styles, computed
 			extra -
 			0.5
 
-		// If offsetWidth/offsetHeight is unknown, then we can't determine content-box scroll gutter
+		// If offsetWidth/offsetHeight is unknown, then we can't determine contents-box scroll gutter
 		// Use an explicit zero to avoid NaN (gh-3964)
 		) ) || 0;
 	}
@@ -18151,7 +18151,7 @@ function getWidthOrHeight( elem, dimension, extra ) {
 	var styles = getStyles( elem ),
 
 		// To avoid forcing a reflow, only fetch boxSizing if we need it (gh-4322).
-		// Fake content-box until we know it's needed to know the true value.
+		// Fake contents-box until we know it's needed to know the true value.
 		boxSizingNeeded = !support.boxSizingReliable() || extra,
 		isBorderBox = boxSizingNeeded &&
 			jQuery.css( elem, "boxSizing", false, styles ) === "border-box",
@@ -18196,7 +18196,7 @@ function getWidthOrHeight( elem, dimension, extra ) {
 
 		// Where available, offsetWidth/offsetHeight approximate border box dimensions.
 		// Where not available (e.g., SVG), assume unreliable box-sizing and interpret the
-		// retrieved value as a content box dimension.
+		// retrieved value as a contents box dimension.
 		valueIsBorderBox = offsetProp in elem;
 		if ( valueIsBorderBox ) {
 			val = elem[ offsetProp ];
@@ -18431,7 +18431,7 @@ jQuery.each( [ "height", "width" ], function( _i, dimension ) {
 					0;
 
 			// Account for unreliable border-box dimensions by comparing offset* to computed and
-			// faking a content-box to get border and padding (gh-3699)
+			// faking a contents-box to get border and padding (gh-3699)
 			if ( isBorderBox && scrollboxSizeBuggy ) {
 				subtract -= Math.ceil(
 					elem[ "offset" + dimension[ 0 ].toUpperCase() + dimension.slice( 1 ) ] -
@@ -20497,7 +20497,7 @@ function ajaxExtend( target, src ) {
 }
 
 /* Handles responses to an ajax request:
- * - finds the right dataType (mediates between content-type and expected dataType)
+ * - finds the right dataType (mediates between contents-type and expected dataType)
  * - returns the corresponding response
  */
 function ajaxHandleResponses( s, jqXHR, responses ) {
@@ -20506,7 +20506,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 		contents = s.contents,
 		dataTypes = s.dataTypes;
 
-	// Remove auto dataType and get content-type in the process
+	// Remove auto dataType and get contents-type in the process
 	while ( dataTypes[ 0 ] === "*" ) {
 		dataTypes.shift();
 		if ( ct === undefined ) {
@@ -20514,7 +20514,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 		}
 	}
 
-	// Check if we're dealing with a known content-type
+	// Check if we're dealing with a known contents-type
 	if ( ct ) {
 		for ( type in contents ) {
 			if ( contents[ type ] && contents[ type ].test( ct ) ) {
@@ -20848,7 +20848,7 @@ jQuery.extend( {
 					return this;
 				},
 
-				// Overrides response content-type header
+				// Overrides response contents-type header
 				overrideMimeType: function( type ) {
 					if ( completed == null ) {
 						s.mimeType = type;
@@ -20949,7 +20949,7 @@ jQuery.extend( {
 		// Uppercase the type
 		s.type = s.type.toUpperCase();
 
-		// Determine if request has content
+		// Determine if request has contents
 		s.hasContent = !rnoContent.test( s.type );
 
 		// Save the URL in case we're toying with the If-Modified-Since
@@ -20957,7 +20957,7 @@ jQuery.extend( {
 		// Remove hash to simplify url manipulation
 		cacheURL = s.url.replace( rhash, "" );
 
-		// More options handling for requests with no content
+		// More options handling for requests with no contents
 		if ( !s.hasContent ) {
 
 			// Remember the hash so we can put it back
@@ -20981,7 +20981,7 @@ jQuery.extend( {
 			// Put hash and anti-cache on the URL that will be requested (gh-1732)
 			s.url = cacheURL + uncached;
 
-		// Change '%20' to '+' if this is encoded form body content (gh-2658)
+		// Change '%20' to '+' if this is encoded form body contents (gh-2658)
 		} else if ( s.data && s.processData &&
 			( s.contentType || "" ).indexOf( "application/x-www-form-urlencoded" ) === 0 ) {
 			s.data = s.data.replace( r20, "+" );
@@ -21133,7 +21133,7 @@ jQuery.extend( {
 					}
 				}
 
-				// if no content
+				// if no contents
 				if ( status === 204 || s.type === "HEAD" ) {
 					statusText = "nocontent";
 
@@ -21924,7 +21924,7 @@ jQuery.fn.extend( {
 			}
 			if ( offsetParent && offsetParent !== elem && offsetParent.nodeType === 1 ) {
 
-				// Incorporate borders into its offset, since they are outside its content origin
+				// Incorporate borders into its offset, since they are outside its contents origin
 				parentOffset = jQuery( offsetParent ).offset();
 				parentOffset.top += jQuery.css( offsetParent, "borderTopWidth", true );
 				parentOffset.left += jQuery.css( offsetParent, "borderLeftWidth", true );
@@ -41101,8 +41101,8 @@ function computeStyle(data, options) {
   var prefixedProperty = getSupportedPropertyName('transform');
 
   // now, let's make a step back and look at this code closely (wtf?)
-  // If the content of the popper grows once it's been positioned, it
-  // may happen that the popper gets misplaced because of the new content
+  // If the contents of the popper grows once it's been positioned, it
+  // may happen that the popper gets misplaced because of the new contents
   // overflowing its reference element
   // To avoid this problem, we provide two options (x and y), which allow
   // the consumer to define the offset origin.
@@ -41412,7 +41412,7 @@ function flip(data, options) {
     // flips variation if reference element overflows boundaries
     var flippedVariationByRef = !!options.flipVariations && (isVertical && variation === 'start' && overflowsLeft || isVertical && variation === 'end' && overflowsRight || !isVertical && variation === 'start' && overflowsTop || !isVertical && variation === 'end' && overflowsBottom);
 
-    // flips variation if popper content overflows boundaries
+    // flips variation if popper contents overflows boundaries
     var flippedVariationByContent = !!options.flipVariationsByContent && (isVertical && variation === 'start' && overflowsRight || isVertical && variation === 'end' && overflowsLeft || !isVertical && variation === 'start' && overflowsBottom || !isVertical && variation === 'end' && overflowsTop);
 
     var flippedVariation = flippedVariationByRef || flippedVariationByContent;
@@ -45368,7 +45368,7 @@ var didWarnValDefaultVal = false;
  * order for the rendered element to be updated.
  *
  * The rendered element will be initialized with an empty value, the prop
- * `defaultValue` if specified, or the children content (deprecated).
+ * `defaultValue` if specified, or the children contents (deprecated).
  */
 function getHostProps$3(element, props) {
   var node = element;
@@ -49406,11 +49406,11 @@ function addEventBubbleListenerWithPassiveFlag(target, eventType, listener, pass
 }
 
 /**
- * These variables store information about text content of a target node,
- * allowing comparison of content before and after a given event.
+ * These variables store information about text contents of a target node,
+ * allowing comparison of contents before and after a given event.
  *
  * Identify the node where selection currently begins, then observe
- * both its text content and its current position in the DOM. Since the
+ * both its text contents and its current position in the DOM. Since the
  * browser may natively replace the target node during composition, we can
  * use its position to find its replacement.
  *
@@ -52127,7 +52127,7 @@ var normalizeHTML;
   warnedUnknownTags = {
     // There are working polyfills for <dialog>. Let people use it.
     dialog: true,
-    // Electron ships a custom <webview> tag to display external web content in
+    // Electron ships a custom <webview> tag to display external web contents in
     // an isolated frame and process.
     // This tag is not present in non Electron environments such as JSDom which
     // is often used for testing purposes.
@@ -52180,7 +52180,7 @@ var normalizeHTML;
 
     didWarnInvalidHydration = true;
 
-    error('Text content did not match. Server: "%s" Client: "%s"', normalizedServerText, normalizedClientText);
+    error('Text contents did not match. Server: "%s" Client: "%s"', normalizedServerText, normalizedClientText);
   };
 
   warnForPropDifference = function (propName, serverValue, clientValue) {
@@ -52904,12 +52904,12 @@ function diffHydratedProperties(domElement, tag, rawProps, parentNamespace, root
     var nextProp = rawProps[propKey];
 
     if (propKey === CHILDREN) {
-      // For text content children we compare against textContent. This
+      // For text contents children we compare against textContent. This
       // might match additional HTML that is hidden when we read it using
       // textContent. E.g. "foo" will match "f<span>oo</span>" but that still
       // satisfies our requirement. Our requirement is not to produce perfect
       // HTML and attributes. Ideally we should preserve structure but it's
-      // ok not to if the visible content is still enough to indicate what
+      // ok not to if the visible contents is still enough to indicate what
       // even listeners these nodes might be wired up to.
       // TODO: Warn if there is more than a single textNode as a child.
       // TODO: Should we use domElement.firstChild.nodeValue to compare?
@@ -53615,7 +53615,7 @@ function commitMount(domElement, type, newProps, internalInstanceHandle) {
   // This happens if `finalizeInitialChildren` returns `true` (which it
   // does to implement the `autoFocus` attribute on the client). But
   // there are also other cases when this might happen (such as patching
-  // up text content during hydration mismatch). So we'll check this again.
+  // up text contents during hydration mismatch). So we'll check this again.
   if (shouldAutoFocusHostComponent(type, newProps)) {
     domElement.focus();
   }
@@ -57675,11 +57675,11 @@ var DefaultSuspenseContext = 0; // The Suspense Context is split into two parts.
 
 var SubtreeSuspenseContextMask = 1; // Subtree Flags:
 // InvisibleParentSuspenseContext indicates that one of our parent Suspense
-// boundaries is not currently showing visible main content.
+// boundaries is not currently showing visible main contents.
 // Either because it is already showing a fallback or is not mounted at all.
 // We can use this to determine if it is desirable to trigger a fallback at
 // the parent. If not, then we might need to trigger undesirable boundaries
-// and/or suspend the commit to avoid hiding the parent content.
+// and/or suspend the commit to avoid hiding the parent contents.
 
 var InvisibleParentSuspenseContext = 1; // Shallow Flags:
 // ForceSuspenseFallback can be used by SuspenseList to force newly added
@@ -58081,7 +58081,7 @@ function popHydrationState(fiber) {
 
   var type = fiber.type; // If we have any remaining hydratable nodes, we need to delete them now.
   // We only do this deeper than head and body since they tend to have random
-  // other nodes in them. We also ignore components with pure text content in
+  // other nodes in them. We also ignore components with pure text contents in
   // side of them.
   // TODO: Better heuristic.
 
@@ -61000,7 +61000,7 @@ function updateHostComponent(current, workInProgress, renderLanes) {
     nextChildren = null;
   } else if (prevProps !== null && shouldSetTextContent(type, prevProps)) {
     // If we're switching from a direct text child to a normal child, or to
-    // empty, we need to schedule the text content to be reset.
+    // empty, we need to schedule the text contents to be reset.
     workInProgress.flags |= ContentReset;
   }
 
@@ -61345,19 +61345,19 @@ function updateSuspenseOffscreenState(prevOffscreenState, renderLanes) {
 
 function shouldRemainOnFallback(suspenseContext, current, workInProgress, renderLanes) {
   // If we're already showing a fallback, there are cases where we need to
-  // remain on that fallback regardless of whether the content has resolved.
-  // For example, SuspenseList coordinates when nested content appears.
+  // remain on that fallback regardless of whether the contents has resolved.
+  // For example, SuspenseList coordinates when nested contents appears.
   if (current !== null) {
     var suspenseState = current.memoizedState;
 
     if (suspenseState === null) {
-      // Currently showing content. Don't hide it, even if ForceSuspenseFallack
+      // Currently showing contents. Don't hide it, even if ForceSuspenseFallack
       // is true. More precise name might be "ForceRemainSuspenseFallback".
       // Note: This is a factoring smell. Can't remain on a fallback if there's
       // no fallback to remain on.
       return false;
     }
-  } // Not currently showing content. Consult the Suspense context.
+  } // Not currently showing contents. Consult the Suspense context.
 
 
   return hasSuspenseContext(suspenseContext, ForceSuspenseFallback);
@@ -61387,7 +61387,7 @@ function updateSuspenseComponent(current, workInProgress, renderLanes) {
     showFallback = true;
     workInProgress.flags &= ~DidCapture;
   } else {
-    // Attempting the main content
+    // Attempting the main contents
     if (current === null || current.memoizedState !== null) {
       // This is a new mount or this boundary is already showing a fallback state.
       // Mark this subtree context as having at least one invisible parent that could
@@ -61443,7 +61443,7 @@ function updateSuspenseComponent(current, workInProgress, renderLanes) {
       return fallbackFragment;
     } else if (typeof nextProps.unstable_expectedLoadTime === 'number') {
       // This is a CPU-bound tree. Skip this tree and show a placeholder to
-      // unblock the surrounding content. Then immediately retry after the
+      // unblock the surrounding contents. Then immediately retry after the
       // initial commit.
       var _fallbackFragment = mountSuspenseFallbackChildren(workInProgress, nextPrimaryChildren, nextFallbackChildren, renderLanes);
 
@@ -61741,7 +61741,7 @@ function propagateSuspenseContextChange(workInProgress, firstChild, renderLanes)
 
 function findLastContentRow(firstChild) {
   // This is going to find the last row among these children that is already
-  // showing content on the screen, as opposed to being in fallback state or
+  // showing contents on the screen, as opposed to being in fallback state or
   // new. If a row has multiple Suspense boundaries, any of them being in the
   // fallback state, counts as the whole row being in a fallback state.
   // Note that the "rows" will be workInProgress, but any nested children
@@ -61751,7 +61751,7 @@ function findLastContentRow(firstChild) {
   var lastContentRow = null;
 
   while (row !== null) {
-    var currentRow = row.alternate; // New rows can't be content rows.
+    var currentRow = row.alternate; // New rows can't be contents rows.
 
     if (currentRow !== null && findFirstSuspended(currentRow) === null) {
       lastContentRow = row;
@@ -61946,7 +61946,7 @@ function updateSuspenseListComponent(current, workInProgress, renderLanes) {
             tail = workInProgress.child;
             workInProgress.child = null;
           } else {
-            // Disconnect the tail rows after the content row.
+            // Disconnect the tail rows after the contents row.
             // We're going to render them separately later.
             tail = lastContentRow.sibling;
             lastContentRow.sibling = null;
@@ -61959,7 +61959,7 @@ function updateSuspenseListComponent(current, workInProgress, renderLanes) {
 
       case 'backwards':
         {
-          // We're going to find the first row that has existing content.
+          // We're going to find the first row that has existing contents.
           // At the same time we're going to reverse the list of everything
           // we pass in the meantime. That's going to be our tail in reverse
           // order.
@@ -61968,10 +61968,10 @@ function updateSuspenseListComponent(current, workInProgress, renderLanes) {
           workInProgress.child = null;
 
           while (row !== null) {
-            var currentRow = row.alternate; // New rows can't be content rows.
+            var currentRow = row.alternate; // New rows can't be contents rows.
 
             if (currentRow !== null && findFirstSuspended(currentRow) === null) {
-              // This is the beginning of the main content.
+              // This is the beginning of the main contents.
               workInProgress.child = row;
               break;
             }
@@ -62943,7 +62943,7 @@ function completeWork(current, workInProgress, renderLanes) {
               // this boundary is ok.
               renderDidSuspend();
             } else {
-              // Otherwise, we're going to have to hide content so we should
+              // Otherwise, we're going to have to hide contents so we should
               // suspend for longer if possible.
               renderDidSuspendDelayIfPossible();
             }
@@ -63012,7 +63012,7 @@ function completeWork(current, workInProgress, renderLanes) {
           if (!didSuspendAlready) {
             // This is the first pass. We need to figure out if anything is still
             // suspended in the rendered set.
-            // If new content unsuspended, but there's still some content that
+            // If new contents unsuspended, but there's still some contents that
             // didn't. Then we need to do a second pass that forces everything
             // to keep showing their fallbacks.
             // We might be suspended if something in this render pass suspended, or
@@ -63073,7 +63073,7 @@ function completeWork(current, workInProgress, renderLanes) {
             if (renderState.tail !== null && now() > getRenderTargetTime()) {
               // We have already passed our CPU deadline but we still have rows
               // left in the tail. We'll just give up further attempts to render
-              // the main content and only render fallbacks.
+              // the main contents and only render fallbacks.
               workInProgress.flags |= DidCapture;
               didSuspendAlready = true;
               cutOffTailIfNeeded(renderState, false); // Since nothing actually suspended, there will nothing to ping this
@@ -63133,7 +63133,7 @@ function completeWork(current, workInProgress, renderLanes) {
             // exceed it.
             now() * 2 - renderState.renderingStartTime > getRenderTargetTime() && renderLanes !== OffscreenLane) {
               // We have now passed our CPU deadline and we'll just give up further
-              // attempts to render the main content and only render fallbacks.
+              // attempts to render the main contents and only render fallbacks.
               // The assumption is that this is usually faster.
               workInProgress.flags |= DidCapture;
               didSuspendAlready = true;
@@ -63686,7 +63686,7 @@ function throwException(root, returnFiber, sourceFiber, value, rootRenderLanes) 
         // those trigger a fallback, then don't suspend/restart. We want to ensure
         // that we can show the initial loading state as quickly as possible.
         //
-        // If we hit a "Delayed" case, such as when we'd switch from content back into
+        // If we hit a "Delayed" case, such as when we'd switch from contents back into
         // a fallback, then we should always suspend/restart. Transitions apply
         // to this case. If none is defined, JND is used instead.
         //
@@ -64539,7 +64539,7 @@ function commitPlacement(finishedWork) {
   }
 
   if (parentFiber.flags & ContentReset) {
-    // Reset the text content of the parent before doing any insertions
+    // Reset the text contents of the parent before doing any insertions
     resetTextContent(parent); // Clear ContentReset from the effect tag
 
     parentFiber.flags &= ~ContentReset;
@@ -65056,7 +65056,7 @@ var FALLBACK_THROTTLE_MS = 500; // The absolute time for when we should start gi
 // more and prefer CPU suspense heuristics instead.
 
 var workInProgressRootRenderTargetTime = Infinity; // How long a render is supposed to take before we start following CPU
-// suspense heuristics and opt out of rendering more content.
+// suspense heuristics and opt out of rendering more contents.
 
 var RENDER_TIMEOUT_MS = 500;
 
@@ -69194,7 +69194,7 @@ function injectIntoDevTools(devToolsConfig) {
     scheduleRoot:  scheduleRoot ,
     setRefreshHandler:  setRefreshHandler ,
     // Enables DevTools to append owner stacks to error messages in DEV mode.
-    getCurrentFiber:  getCurrentFiberForDevTools 
+    getCurrentFiber:  getCurrentFiberForDevTools
   });
 }
 
@@ -69221,7 +69221,7 @@ ReactDOMRoot.prototype.render = ReactDOMBlockingRoot.prototype.render = function
 
       if (hostInstance) {
         if (hostInstance.parentNode !== container) {
-          error('render(...): It looks like the React-rendered content of the ' + 'root container was removed without using React. This is not ' + 'supported and will cause errors. Instead, call ' + "root.unmount() to empty a root's container.");
+          error('render(...): It looks like the React-rendered contents of the ' + 'root container was removed without using React. This is not ' + 'supported and will cause errors. Instead, call ' + "root.unmount() to empty a root's container.");
         }
       }
     }
@@ -69285,7 +69285,7 @@ var warnedAboutHydrateAPI = false;
 
       if (hostInstance) {
         if (hostInstance.parentNode !== container) {
-          error('render(...): It looks like the React-rendered content of this ' + 'container was removed without using React. This is not ' + 'supported and will cause errors. Instead, call ' + 'ReactDOM.unmountComponentAtNode to empty a container.');
+          error('render(...): It looks like the React-rendered contents of this ' + 'container was removed without using React. This is not ' + 'supported and will cause errors. Instead, call ' + 'ReactDOM.unmountComponentAtNode to empty a container.');
         }
       }
     }
@@ -69322,7 +69322,7 @@ function shouldHydrateDueToLegacyHeuristic(container) {
 }
 
 function legacyCreateRootFromDOMContainer(container, forceHydrate) {
-  var shouldHydrate = forceHydrate || shouldHydrateDueToLegacyHeuristic(container); // First clear any existing content.
+  var shouldHydrate = forceHydrate || shouldHydrateDueToLegacyHeuristic(container); // First clear any existing contents.
 
   if (!shouldHydrate) {
     var warned = false;
@@ -70080,7 +70080,7 @@ var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
   } else {
     props.ref = innerRef;
   }
-  /* eslint-disable-next-line jsx-a11y/anchor-has-content */
+  /* eslint-disable-next-line jsx-a11y/anchor-has-contents */
 
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("a", props);
@@ -76247,7 +76247,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_NavBar_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./NavBar.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/NavBar.css");
 
-            
+
 
 var options = {};
 
@@ -76772,7 +76772,7 @@ module.exports = JSON.parse('{"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBu
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -76786,20 +76786,20 @@ module.exports = JSON.parse('{"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBu
 /******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
@@ -76832,7 +76832,7 @@ module.exports = JSON.parse('{"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBu
 /******/ 			return result;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -76844,7 +76844,7 @@ module.exports = JSON.parse('{"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBu
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -76856,7 +76856,7 @@ module.exports = JSON.parse('{"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBu
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -76868,12 +76868,12 @@ module.exports = JSON.parse('{"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBu
 /******/ 			}
 /******/ 		})();
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -76884,7 +76884,7 @@ module.exports = JSON.parse('{"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBu
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nmd = (module) => {
@@ -76893,11 +76893,11 @@ module.exports = JSON.parse('{"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBu
 /******/ 			return module;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/ 		
+/******/
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
@@ -76905,19 +76905,19 @@ module.exports = JSON.parse('{"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBu
 /******/ 			"/js/app": 0,
 /******/ 			"css/app": 0
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// no chunk on demand loading
-/******/ 		
+/******/
 /******/ 		// no prefetching
-/******/ 		
+/******/
 /******/ 		// no preloaded
-/******/ 		
+/******/
 /******/ 		// no HMR
-/******/ 		
+/******/
 /******/ 		// no HMR manifest
-/******/ 		
+/******/
 /******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
+/******/
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 /******/ 			var [chunkIds, moreModules, runtime] = data;
@@ -76942,20 +76942,20 @@ module.exports = JSON.parse('{"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBu
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
-/******/ 		
+/******/
 /******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+/******/
 /******/ })()
 ;
