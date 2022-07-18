@@ -35,7 +35,6 @@ const NavBar = () => {
                 <NavLink to="#" className="nav-bar-brand m-2">
                     <img
                         src={UB_Logo}
-                        style={UB_Logo_Style}
                         width="75"
                         height="75"
                         className="img-fluid"

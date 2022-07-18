@@ -1,0 +1,22 @@
+:root {
+    --bs-blue: #003250;
+    --bs-white: #FFF7F7;
+    --bs-grey: #EEEEEE;
+}
+
+.cs-background-blue {
+    background-color: var(--bs-blue);
+}
+
+.cs-background-white {
+    background-color: var(--bs-white);
+}
+
+.cs-background-grey {
+    background-color: var(--bs-grey);
+}
+
+.cs-english-text {
+    font-style: italic;
+    font-size: 0.78em;
+}
