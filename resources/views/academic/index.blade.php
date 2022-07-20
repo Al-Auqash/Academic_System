@@ -16,16 +16,12 @@
                 @include('academic.components.sidebar')
             </div>
             <div class="col-9 p-0 m-0">
-{{--                @if( \Request::is('') )--}}
-{{--                    @include('academic.components.contents')--}}
-{{--                @elseif(Request::is('presensi-online'))--}}
-{{--                    @include('academic.components.contents.presence')--}}
-{{--                @else--}}
-{{--                    <p>ahahahah</p>--}}
-{{--                @endif--}}
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center p-2 w-100 rounded cs-background-blue"
+                >
 
-                @yield('subcontent')
-
+                    @yield('subcontent')
+                </div>
             </div>
         </div>
     </div>
