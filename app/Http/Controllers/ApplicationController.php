@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class ApplicationController extends Controller
 {
     function index(){
-        return view('application.index');
+        return view('application.components.contents.content');
     }
 
     function graduationProcessAndGraduationCeremony(){
