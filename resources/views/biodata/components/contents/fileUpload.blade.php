@@ -4,41 +4,25 @@
     <table class="table text-white">
         <thead class="thead-light">
         <tr>
-            <th>Transaksi</th>
-            <th>Status</th>
+            <th>Kategori</th>
             <th>Keterangan</th>
-            <th>Waktu</th>
-            <th>Debet</th>
-            <th>Kredit</th>
-            <th>Saldo</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
+            <td>Foto Diri</td>
             <td>1</td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
+            <td>Surat Pernyataan</td>
             <td>1</td>
         </tr>
         <tr>
+            <td>Surat Keterangan</td>
             <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
+        </tr>
+        <tr>
+            <td>Surat Keterangan Pemeriksaan Buta Warna</td>
             <td>1</td>
         </tr>
         </tbody>
