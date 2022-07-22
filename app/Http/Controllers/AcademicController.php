@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class AcademicController extends Controller
 {
     function index(){
-        return view('academic.index');
+        return view('academic.components.contents.content');
     }
 
     function onlinePresence(){

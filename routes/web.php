@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AcademicController;
+use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\BiodataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,4 +67,20 @@ Route::prefix('akademik')->group(function () {
     Route::get('/jadwal-ujian', [AcademicController::class, 'examSchedule']);
     Route::get('/absensi', [AcademicController::class, 'attendance']);
     Route::get('/rekap-hasil-studi', [AcademicController::class, 'summaryCourseGrade']);
+});
+
+Route::prefix('registrasi')->group(function(){
+    Route::get('/', [RegistrationController::class, 'index']);
+    Route::get('/info-registrasi', [RegistrationController::class, 'registrationInfo']);
+    Route::get('/histori-status', [RegistrationController::class, 'academicStatusHistory']);
+});
+
+Route::prefix('biodata')->group(function(){
+    Route::get('/', [BiodataController::class, 'index']);
+    Route::get('/data-mahasiswa', [BiodataController::class, 'studentData']);
+    Route::get('/asal-sekolah', [BiodataController::class, 'previousEducation']);
+    Route::get('/data-keluarga', [BiodataController::class, 'relativesData']);
+    Route::get('/keuangan', [BiodataController::class, 'financial']);
+    Route::get('/upload-berkas', [BiodataController::class, 'fileUpload']);
+    Route::get('/cetak-tanda-bukti', [BiodataController::class, 'printReceipts']);
 });

@@ -28,7 +28,18 @@
     @include('navigation')
 
     <main class="p-4">
-        @yield('contents')
+        <div class="container-fluid p-5 border rounded cs-background-grey">
+            <div class="row rounded">
+                <div class="col-9 p-0 m-0">
+                    @include('layouts.components.biodata')
+                </div>
+                <div class="col-3 p-0 m-0">
+                    @include('layouts.components.news')
+                </div>
+            </div>
+            <hr class="box-divider"/>
+            @yield('contents')
+        </div>
     </main>
 </div>
 </body>

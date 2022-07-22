@@ -3,7 +3,7 @@
 @section('contents')
     <div class="row mt-5">
         <div class="col-3 p-0 m-0">
-            @include('academic.components.sidebar')
+            @include('biodata.components.sidebar')
         </div>
         <div class="col-9 p-0 m-0">
             <div
